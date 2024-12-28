@@ -1,10 +1,11 @@
 'use client'
 import styles from "./page.module.css";
+import { redirect } from 'next/navigation'
 
 export default function Home() {
  
   const testingFn =()=>{
-    alert("Hello Next")
+    redirect('/about')
   }
 
   return (
