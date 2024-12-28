@@ -1,10 +1,11 @@
 'use client'
 import React from 'react'
-import { useRouter } from 'next/navigation'
+// import {useHandleRouter} from '@/utils/Utility'
 
 export default function Projects() {
-    const navigate= useRouter()
+
+//   const navigate =useHandleRouter()
   return (
-    <div onClick={()=>navigate.push('/login')}>Projects</div>
+    <div onClick={()=>navigate('/login')}>Projects</div>
   )
 }
