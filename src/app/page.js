@@ -1,16 +1,22 @@
-'use client'
+"use client";
 import styles from "./page.module.css";
-import { redirect } from 'next/navigation'
+import { redirect } from "next/navigation";
 
 export default function Home() {
- 
-  const testingFn =()=>{
-    redirect('/about')
-  }
+  const handleNavigation = (url) => {
+    redirect(url);
+  };
 
   return (
-    <div className={styles.page}>
-      <h1 onClick={()=>testingFn()}>Home Page</h1>
+    <div className={styles.main}>
+      <h1>Welcome to college Website</h1>
+      <div>
+        <ul className={styles.main_navbar}>
+          <li onClick={() => handleNavigation("/about")}>About</li>
+          <li onClick={() => handleNavigation("/login")}>Login</li>
+          <li onClick={() => handleNavigation("/projects")}>Projects</li>
+        </ul>
+      </div>
     </div>
   );
 }

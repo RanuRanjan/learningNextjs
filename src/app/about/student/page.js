@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function AboutStudent() {
   return (
     <div>
-        <h1>AboutStudent</h1>
+      <h1 style={{textAlign:"center"}}>About Student</h1>
     </div>
-  )
+  );
 }

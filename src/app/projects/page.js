@@ -5,7 +5,5 @@ import React from 'react'
 export default function Projects() {
 
 //   const navigate =useHandleRouter()
-  return (
-    <div onClick={()=>navigate('/login')}>Projects</div>
-  )
+  return <div onClick={() => navigate("/login")}>Projects</div>;
 }

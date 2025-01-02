@@ -1,0 +1,10 @@
+.about-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style-type: none; /* Remove bullets */
+}
+
+.about-menu li a{
+    text-decoration: none;
+}
