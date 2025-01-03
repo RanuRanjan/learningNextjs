@@ -15,6 +15,8 @@ export default function Home() {
           <li onClick={() => handleNavigation("/about")}>About</li>
           <li onClick={() => handleNavigation("/login")}>Login</li>
           <li onClick={() => handleNavigation("/projects")}>Projects</li>
+          <li onClick={() => handleNavigation("/subject")}>Subject</li>
+          <li onClick={() => handleNavigation("/degree")}>Degree</li>
         </ul>
       </div>
     </div>
